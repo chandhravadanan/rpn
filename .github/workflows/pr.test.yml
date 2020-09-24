@@ -26,5 +26,5 @@ jobs:
         run: |
           npm i
           npm run test
-          cov ${{secrets.CODECOV_TOKEN}}
+          npm run cov ${{secrets.CODECOV_TOKEN}}
 
