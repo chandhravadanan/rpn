@@ -14,7 +14,7 @@ describe('Binary Operations', function() {
       it('should do addition of two numbers', function() {
           assert.throws(()=>evaluator.evaluate('+'), Error)
           assert.throws(()=>evaluator.evaluate('0 +'), Error)
-          assert.equal(evaluator.evaluate('1 2 +').getTop(), 4)
+          assert.equal(evaluator.evaluate('1 2 +').getTop(), 3)
           assert.equal(evaluator.evaluate('-1 -1 +').getTop(), -2)
           assert.equal(evaluator.evaluate('14.5 16.4 +').getTop(), 30.9)
       });
