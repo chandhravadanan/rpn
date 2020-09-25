@@ -1,0 +1,32 @@
+coverage:
+  status:
+    project:
+      default: off
+      frontend:
+        target: 10%
+        flags: 
+          - frontend
+      backend:
+        target: 10%
+        flags: 
+          - backend
+
+flags:
+  backend:
+    paths:
+      - lib/interactive.js
+      - lib/operations.js
+      - lib/utils.js
+  frontend:
+    paths:
+      - lib/rpnevaluator.js
+
+comment:
+  layout: "reach, diff, flags, files"
+  behavior: new
+  require_changes: false  # if true: only post the comment if coverage changes
+  require_base: no        # [yes :: must have a base report to post]
+  require_head: no
+
+github_checks:
+  annotations: true
