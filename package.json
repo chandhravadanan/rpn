@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "istanbul cover mocha",
+    "cov": "codecov --token=$1"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,9 @@
     "bignumber.js": "^9.0.0"
   },
   "devDependencies": {
-    "mocha": "^7.1.2"
+    "codecov": "^3.7.2",
+    "istanbul": "^0.4.5",
+    "mocha": "^7.1.2",
+    "nyc": "^15.1.0"
   }
 }
